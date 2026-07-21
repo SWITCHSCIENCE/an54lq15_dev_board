@@ -1,0 +1,24 @@
+# Copyright (c) 2025 Nordic Semiconductor ASA
+# Copyright (c) 2025 Raytac Corporation.
+# SPDX-License-Identifier: Apache-2.0
+
+identifier: ssci_an54lq15_dev_board/nrf54l15/cpuapp/ns
+name: Switch-Science-AN54LQ-15-Dev-Board-nRF54l15-Application-Non-Secure
+type: mcu
+arch: arm
+toolchain:
+  - gnuarmemb
+  - zephyr
+ram: 256
+flash: 1524
+supported:
+  - adc
+  - gpio
+  - i2c
+  - spi
+  - counter
+  - watchdog
+  - adc
+  - i2s
+vendor: ssci
+sysbuild: true

@@ -1,0 +1,48 @@
+board:
+  name: ssci_an54lq15_dev_board
+  full_name: Switch Science AN54LQ-15 Dev Board
+  vendor: ssci
+  socs:
+    - name: nrf54l15
+      variants:
+        - name: xip
+          cpucluster: cpuflpr
+        - name: ns
+          cpucluster: cpuapp
+runners:
+  run_once:
+    '--recover':
+      - runners:
+          - nrfjprog
+          - nrfutil
+        run: first
+        groups:
+          - boards:
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp/ns
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr/xip
+    '--erase':
+      - runners:
+          - nrfjprog
+          - jlink
+          - nrfutil
+        run: first
+        groups:
+          - boards:
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp/ns
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr/xip
+    '--reset':
+      - runners:
+          - nrfjprog
+          - jlink
+          - nrfutil
+        run: last
+        groups:
+          - boards:
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp
+              - ssci_an54lq15_dev_board/nrf54l15/cpuapp/ns
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr
+              - ssci_an54lq15_dev_board/nrf54l15/cpuflpr/xip

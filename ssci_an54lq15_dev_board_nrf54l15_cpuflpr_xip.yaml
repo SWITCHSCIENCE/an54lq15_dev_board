@@ -1,0 +1,20 @@
+# Copyright (c) 2024 Nordic Semiconductor ASA
+# Copyright (c) 2025 Raytac Corporation.
+# SPDX-License-Identifier: Apache-2.0
+
+identifier: ssci_an54lq15_dev_board/nrf54l15/cpuflpr/xip
+name: Switch-Science-AN54LQ-15-Dev-Board-nRF54L15-Fast-Lightweight-Peripheral-Processor (RRAM XIP)
+
+type: mcu
+arch: riscv
+toolchain:
+  - zephyr
+sysbuild: true
+ram: 68
+flash: 96
+supported:
+  - counter
+  - gpio
+  - i2c
+  - spi
+  - watchdog
