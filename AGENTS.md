@@ -17,10 +17,10 @@ nRF Connect SDK（NCS）外部ボード定義である。ルートの `board.yml
 バージョン、ワークスペース、アプリケーション、およびビルドディレクトリは推測
 しない。SDK のローカル検索もしない。NCS/Zephyr の手順やコマンドは必ず Nordic
 MCP で確認してから案内する。外部ボードとしてビルドする際は、MCP のガイダンス
-どおり `BOARD_ROOT` にこのリポジトリの絶対パスを渡す。
+どおり `BOARD_ROOT` に `boards/` を含む親ディレクトリの絶対パスを渡す。
 
 ```powershell
-west build -b ssci_an54lq15_dev_board/nrf54l15/cpuapp <app> -- -DBOARD_ROOT=<このリポジトリの絶対パス>
+west build -b ssci_an54lq15_dev_board/nrf54l15/cpuapp <app> -- -DBOARD_ROOT=<boardsディレクトリを含む親ディレクトリ>
 ```
 
 エージェントはビルド、書込み、消去、リセット、実機テストを実行しない。これらは

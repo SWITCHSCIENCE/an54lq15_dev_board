@@ -13,7 +13,6 @@
 #include "ssci_an54lq15_dev_board_cpuapp_common.dtsi"
 
 / {
-	compatible = "ssci,ssci_an54lq15_dev_board_nrf54l15-cpuapp";
 	model = "Switch Science AN54LQ-15 Dev Board nRF54L15 Application MCU";
 
 	chosen {
