@@ -1,0 +1,217 @@
+Netlist
+
+Exported from AN54LQ-15_Dev_Board.sch at 2026/09/21 19:02
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Net      Part     Pad      Pin        Sheet
+
++3V3     C2       1        1          1
+         C3       1        1          1
+         C4       1        1          1
+         J3       8        8          1
+         J4       2        2          1
+         M1       11       VDD_NRF    1
+         R10      2        2          1
+         U1       6        VOUT       1
+
+CFG1     R5       1        1          1
+         U1       3        CFG1       1
+
+CFG2     R7       1        1          1
+         U1       4        CFG2       1
+
+CFG3     R8       1        1          1
+         U1       5        CFG3       1
+
+DCC      L2       1        P$1        1
+         M1       9        DCC        1
+
+DECD     L2       2        P$2        1
+         M1       8        DECD       1
+
+EN       J3       6        6          1
+         R6       2        2          1
+         U1       1        EN         1
+
+GND      C1       2        2          1
+         C2       2        2          1
+         C3       2        2          1
+         C4       2        2          1
+         C5       2        2          1
+         J1       1        1          1
+         J1       20       20         1
+         J2       A1B12    GND        1
+         J2       B1A12    GND        1
+         J2       SHIELD_1 GND        1
+         J2       SHIELD_2 GND        1
+         J2       SHIELD_3 GND        1
+         J2       SHIELD_4 GND        1
+         J3       1        1          1
+         J3       20       20         1
+         J4       1        1          1
+         LED      K        K          1
+         M1       1        GND        1
+         M1       10       GND        1
+         M1       14       GND        1
+         M1       26       GND        1
+         M1       42       GND        1
+         M1       43       GND        1
+         R1       2        2          1
+         R2       2        2          1
+         R4       2        2          1
+         R5       2        2          1
+         R7       2        2          1
+         R8       2        2          1
+         RST      3        2          1
+         RST      4        2          1
+         U1       11       EXP        1
+         U1       8        GND        1
+         USR      3        2          1
+         USR      4        2          1
+
+LX1      L1       1        P$1        1
+         U1       9        LX1        1
+
+LX2      L1       2        P$2        1
+         U1       7        LX2        1
+
+N$1      LED      A        A          1
+         R9       2        2          1
+
+N$14     J2       B5       CC2        1
+         R1       1        1          1
+
+N$15     J2       A5       CC1        1
+         R2       1        1          1
+
+NRESET   J1       19       19         1
+         R11      1        1          1
+         RST      1        1          1
+         RST      2        1          1
+
+P0.00    J1       12       12         1
+         M1       34       P0.00      1
+
+P0.01    J1       13       13         1
+         M1       35       P0.01      1
+
+P0.02    J1       16       16         1
+         M1       41       P0.02      1
+
+P0.03    J1       17       17         1
+         M1       38       P0.03      1
+
+P0.04    J1       18       18         1
+         M1       40       P0.04      1
+
+P1.02    J3       13       13         1
+         M1       15       P1.02/NFC1 1
+
+P1.03    J3       12       12         1
+         M1       16       P1.03/NFC2 1
+
+P1.04    J3       11       11         1
+         M1       17       P1.04      1
+
+P1.05    J3       10       10         1
+         M1       18       P1.05      1
+
+P1.06    J3       9        9          1
+         M1       19       P1.06      1
+
+P1.07    J3       4        4          1
+         M1       20       P1.07      1
+
+P1.08    J3       3        3          1
+         M1       21       P1.08      1
+
+P1.09    J3       19       19         1
+         M1       2        P1.09      1
+
+P1.10    J3       18       18         1
+         M1       3        P1.10      1
+
+P1.11    J3       17       17         1
+         J4       4        4          1
+         M1       4        P1.11      1
+
+P1.12    J3       16       16         1
+         J4       3        3          1
+         M1       5        P1.12      1
+
+P1.13    J3       15       15         1
+         M1       6        P1.13      1
+         R10      1        1          1
+         USR      1        1          1
+         USR      2        1          1
+
+P1.14    J3       14       14         1
+         M1       7        P1.14      1
+
+P2.00    J3       2        2          1
+         M1       22       P2.00      1
+
+P2.01    J1       2        2          1
+         M1       23       P2.01      1
+
+P2.02    J1       3        3          1
+         M1       24       P2.02      1
+
+P2.03    J1       4        4          1
+         M1       25       P2.03      1
+
+P2.04    J1       5        5          1
+         M1       27       P2.04      1
+
+P2.05    J1       6        6          1
+         M1       28       P2.05      1
+
+P2.06    J1       7        7          1
+         M1       29       P2.06      1
+
+P2.07    J1       8        8          1
+         M1       30       P2.07      1
+
+P2.08    J1       9        9          1
+         M1       31       P2.08      1
+
+P2.09    J1       10       10         1
+         M1       32       P2.09      1
+         R9       1        1          1
+
+P2.10    J1       11       11         1
+         M1       33       P2.10      1
+
+RESET    C5       1        1          1
+         M1       39       RESET      1
+         R11      2        2          1
+
+SEL      J3       7        7          1
+         R3       2        2          1
+         R4       1        1          1
+         U1       2        SEL        1
+
+SWDCLK   J1       15       15         1
+         M1       37       SWDCLK     1
+
+SWDIO    J1       14       14         1
+         M1       36       SWDIO      1
+
+VBUS     D1       A        2          1
+         J2       A4B9     VBUS       1
+         J2       B4A9     VBUS       1
+
+VIN      C1       1        1          1
+         D1       K        1          1
+         J3       5        5          1
+         R3       1        1          1
+         R6       1        1          1
+         U1       10       VIN        1
+
+XL1      M1       12       P1.00/XL1  1
+         Q1       2        2          1
+
+XL2      M1       13       P1.01/XL2  1
+         Q1       1        1          1
+
