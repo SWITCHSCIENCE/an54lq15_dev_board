@@ -17,21 +17,6 @@
 		};
 	};
 
-	pwmleds {
-		compatible = "pwm-leds";
-
-		/*
-		 * PWM signal can be exposed on GPIO pin only within same domain.
-		 * There is only one domain which contains both PWM and GPIO:
-		 * PWM20/21/22 and GPIO Port P1.
-		 * Only LEDs connected to P1 can work with PWM, for example LED1.
-		 */
-
-		pwm_led1: pwm_led_1 {
-			pwms = <&pwm20 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
-		};
-	};
-
 	buttons {
 		compatible = "gpio-keys";
 
@@ -44,7 +29,6 @@
 
 	aliases {
 		led0 = &led0;
-		pwm-led0 = &pwm_led1;
 		sw0 = &button0;
 		watchdog0 = &wdt31;
 	};
@@ -61,13 +45,6 @@
 	current-speed = <115200>;
 	pinctrl-0 = <&uart30_default>;
 	pinctrl-1 = <&uart30_sleep>;
-	pinctrl-names = "default", "sleep";
-};
-
-&pwm20 {
-	status = "okay";
-	pinctrl-0 = <&pwm20_default>;
-	pinctrl-1 = <&pwm20_sleep>;
 	pinctrl-names = "default", "sleep";
 };
 

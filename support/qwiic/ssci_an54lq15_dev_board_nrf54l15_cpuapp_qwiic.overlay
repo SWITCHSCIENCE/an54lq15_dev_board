@@ -1,0 +1,33 @@
+/*
+ * Optional Qwiic/STEMMA QT I2C bus for applications targeting
+ * ssci_an54lq15_dev_board/nrf54l15/cpuapp.
+ *
+ * Enable CONFIG_I2C in the application configuration and pass this file via
+ * EXTRA_DTC_OVERLAY_FILE. Add external-device nodes to &i2c21 in the
+ * application-specific overlay.
+ */
+
+&pinctrl {
+	qwiic_i2c21_default: qwiic_i2c21_default {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SCL, 1, 11)>,
+				<NRF_PSEL(TWIM_SDA, 1, 12)>;
+		};
+	};
+
+	qwiic_i2c21_sleep: qwiic_i2c21_sleep {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SCL, 1, 11)>,
+				<NRF_PSEL(TWIM_SDA, 1, 12)>;
+			low-power-enable;
+		};
+	};
+};
+
+&i2c21 {
+	status = "okay";
+	clock-frequency = <100000>;
+	pinctrl-0 = <&qwiic_i2c21_default>;
+	pinctrl-1 = <&qwiic_i2c21_sleep>;
+	pinctrl-names = "default", "sleep";
+};
